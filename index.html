@@ -157,7 +157,7 @@ var tokenResponse = null;
 /*services*/
  $.ajax({
 		type: "GET",
-		url: 'http://localhost:5000/api/trips/service/customTest',		
+		url: 'http://localhost:5000/api/trips/service/manageTrip',		
 		headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
 		success: function(response){
 			console.log('response - ', response);			
