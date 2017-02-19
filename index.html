@@ -143,27 +143,27 @@ var tokenResponse = null;
 	// 	dataType: 'json'
 	// });
 
- //   $.ajax({
-	// 	type: "GET",
-	// 	url: 'http://localhost:5000/api/trips/db',		
-	// 	headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
-	// 	success: function(response){
-	// 		console.log('db - ', response);			
-	// 	},
-	// 	dataType: 'json'
-	// });
-
-
-/*services*/
- $.ajax({
+   $.ajax({
 		type: "GET",
-		url: 'http://localhost:5000/api/trips/service/manageTrip',		
+		url: 'http://localhost:5000/api/trips/db',		
 		headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
 		success: function(response){
-			console.log('response - ', response);			
+			console.log('db - ', response);			
 		},
 		dataType: 'json'
 	});
+
+
+/*services*/
+//  $.ajax({
+// 		type: "GET",
+// 		url: 'http://localhost:5000/api/trips/service/manageTrip',		
+// 		headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
+// 		success: function(response){
+// 			console.log('response - ', response);			
+// 		},
+// 		dataType: 'json'
+// 	});
 
 //http://localhost:3000/api/auth/random-number
 </script>
