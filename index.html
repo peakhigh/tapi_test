@@ -20,7 +20,7 @@ var tokenResponse = null;
 	// 	  console.log(response);        
 	// 		tokenResponse = response;
 	// 		localStorage.setItem('auth-token', response.token);
- //         console.log(localStorage.getItem('auth-token'));
+   //       console.log(localStorage.getItem('auth-token'));
 	//   },
 	//   dataType: 'json'
 	// });
@@ -123,25 +123,25 @@ var tokenResponse = null;
 
 
    /* trips */ 
- //   $.ajax({
-	// 	type: "GET",
-	// 	url: 'http://localhost:5000/api/trips/form',		
-	// 	headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
-	// 	success: function(response){
-	// 		console.log('form - ', response);			
-	// 	},
-	// 	dataType: 'json'
-	// });
+   $.ajax({
+		type: "GET",
+		url: 'http://localhost:5000/api/trips/form',		
+		headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
+		success: function(response){
+			console.log('form - ', response);			
+		},
+		dataType: 'json'
+	});
 
- //   $.ajax({
-	// 	type: "GET",
-	// 	url: 'http://localhost:5000/api/trips/grid',		
-	// 	headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
-	// 	success: function(response){
-	// 		console.log('grid - ', response);			
-	// 	},
-	// 	dataType: 'json'
-	// });
+   $.ajax({
+		type: "GET",
+		url: 'http://localhost:5000/api/trips/grid',		
+		headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
+		success: function(response){
+			console.log('grid - ', response);			
+		},
+		dataType: 'json'
+	});
 
    $.ajax({
 		type: "GET",
@@ -155,15 +155,25 @@ var tokenResponse = null;
 
 
 /*services*/
-//  $.ajax({
-// 		type: "GET",
-// 		url: 'http://localhost:5000/api/trips/service/manageTrip',		
-// 		headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
-// 		success: function(response){
-// 			console.log('response - ', response);			
-// 		},
-// 		dataType: 'json'
-// 	});
+ $.ajax({
+		type: "GET",
+		url: 'http://localhost:5000/api/trips/service/manageTrip',		
+		headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
+		success: function(response){
+			console.log('response - ', response);			
+		},
+		dataType: 'json'
+	});
+
+   $.ajax({
+		type: "GET",
+		url: 'http://localhost:5000/api/trips/service/addTrip?id=58a917f4e904510f97fd19ef',		
+		headers: {'Authorization': 'Bearer ' + localStorage.getItem('auth-token') },
+		success: function(response){
+			console.log('response - ', response);			
+		},
+		dataType: 'json'
+	});
 
 //http://localhost:3000/api/auth/random-number
 </script>

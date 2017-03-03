@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fairfax Widgets Test</title>
+</head>
+<body>
+
+<div id="loadingAnim" style="width:620px; text-align: center; display:none;">
+	<img src="https://i.stack.imgur.com/kOnzy.gif"/>
+	<div>
+		Loading...
+	</div>
+</div>
+<div id="YOUR_ID1" style="width:620px; min-height: 490px">
+</div>
+
+<script type="text/javascript">
+	var settings = {
+		anchor: 'YOUR_ID1', // set same as above html element ID
+		loadingElement: 'loadingAnim',// your loading anim element ID
+		marketing_code: 'FNZ01',
+		type: 'desktop',
+		server: 'http://odin.dev.echoiceaffiliates.com.au',
+		testing: true
+	};
+
+	var s = document.createElement('script');
+	s.type = 'text/javascript';
+	s.async = true;
+	s.src = settings.server + '/html/FairfaxNZ/js/include.js?settings=' + encodeURIComponent(JSON.stringify(settings));
+	s.setAttribute("data-client", "eChoice-ffax-nz-widgets");
+	var a = document.getElementsByTagName('script')[0];
+	a.parentNode.insertBefore(s, a);
+</script>
+
+
+
+
+
+<div id="YOUR_ID2" style="width:300px; min-height: 460px;">
+</div>
+
+<script type="text/javascript">
+	var settings = {
+		anchor: 'YOUR_ID2', //set same as above html element ID
+		marketing_code: 'FNZ01',
+		type: 'sidebar',
+		server: 'http://odin.dev.echoiceaffiliates.com.au',
+		testing: true
+	};
+
+	var s = document.createElement('script');
+	s.type = 'text/javascript';
+	s.async = true;
+	s.src = settings.server + '/html/FairfaxNZ/js/include.js?settings=' + encodeURIComponent(JSON.stringify(settings));
+	s.setAttribute("data-client", "eChoice-ffax-nz-widgets");
+	var a = document.getElementsByTagName('script')[0];
+	a.parentNode.insertBefore(s, a);
+</script>
+
+
+
+
+<div id="YOUR_ID" style="width: 420px; min-height: 190px">
+</div>
+
+<script type="text/javascript">
+	var settings = {
+		anchor: 'YOUR_ID', // set same as above html element ID
+		marketing_code: 'FNZ01',
+		type: 'mobile',
+		server: 'http://odin.dev.echoiceaffiliates.com.au',
+		testing: true
+	};
+
+	var s = document.createElement('script');
+	s.type = 'text/javascript';
+	s.async = true;
+	s.src = settings.server + '/html/FairfaxNZ/js/include.js?settings=' + encodeURIComponent(JSON.stringify(settings));
+	s.setAttribute("data-client", "eChoice-ffax-nz-widgets");
+	var a = document.getElementsByTagName('script')[0];
+	a.parentNode.insertBefore(s, a);
+</script>
+
+
+
+
+</body>
+</html>
